@@ -1,0 +1,48 @@
+//
+//
+//  Smartbox-PrefixHeader.pch
+//  Smartbox
+//
+//  Created by Mesada on 14/11/7.
+//  Copyright (c) 2014年 mesada. All rights reserved.
+//
+
+#ifndef Smartbox_Smartbox_PrefixHeader_pch
+#define Smartbox_Smartbox_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
+
+#define VERSION_NO		@"V1.0.0"
+#define VERSION_CHECKNO @"1.0.0"//@"3.5.2"
+#define VERSION_UINT	65536//132096//196608  //格式如:1.0.0 (16进制10000的十进制值为:65536)
+
+#define HttpNetworkTimeout		20.0
+#define TcpNetworkTimeout		20.0
+#define TcpLoginTimeout			12.0
+#define TcpShortTimeOut			12.0
+
+
+#define DefaultDeviceToken             @"04cf34c6dd72b3d43c63d976c5c1f6373ae47005cae87bb7cc3d2057d7a85378"
+//test服务器
+#define BusiServerIp				@"218.17.152.243"
+#define FileServPrefix				@"http://testfileservice.365car.com.cn:88/"
+#define FileMiddleUri @"fileService/web4s/photo/userPhoto/normal/"
+//#define BusiServerIp @"conn.365car.com.cn"
+
+
+/*通知名称*/
+#define  LoginSuccessed_Notification                 @"LoginSuccessed"
+
+
+
+#define screenHeight [[UIScreen mainScreen] bounds].size.height //屏幕高度
+#define screenWidth [[UIScreen mainScreen] bounds].size.width  //屏幕宽度
+
+#endif
+
+#endif
